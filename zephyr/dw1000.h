@@ -5,5 +5,6 @@
 #include "deca_regs.h"
 #include "dw1000_spi.h"
 #include "dw1000_hw.h"
+#include "deca_timestamp.h"
 
 #endif // DW1000_H

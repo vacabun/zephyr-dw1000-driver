@@ -1,0 +1,5 @@
+zephyr_include_directories(.)
+add_subdirectory_ifdef(CONFIG_DW1000 dwt_uwb_driver)
+add_subdirectory_ifdef(CONFIG_DW1000 platform)
+# add_subdirectory_ifdef(CONFIG_DW1000 shared_data)
+# add_subdirectory_ifdef(CONFIG_DW1000 MAC_802_15_4)

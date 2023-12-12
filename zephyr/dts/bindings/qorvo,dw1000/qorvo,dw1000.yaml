@@ -1,0 +1,31 @@
+description: Qorvo/Decawave DW1000 (SPI)
+
+compatible: "qorvo,dw1000"
+
+include: spi-device.yaml
+
+properties:
+    reset-gpios:
+      type: phandle-array
+      required: true
+      description: RESET pin (active low)
+
+    irq-gpios:
+      type: phandle-array
+      required: true
+      description: IRQ pin (active high)
+
+    wakeup-gpios:
+      type: phandle-array
+      required: false
+      description: WAKEUP pin (active high)
+
+    spi-pol-gpios:
+      type: phandle-array
+      required: false
+      description: SPI Polarity pin
+
+    spi-pha-gpios:
+      type: phandle-array
+      required: false
+      description: SPI Phase pin

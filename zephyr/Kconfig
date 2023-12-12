@@ -1,0 +1,9 @@
+menuconfig DW1000
+	bool "DW1000"
+	depends on SPI
+	help
+		Qorvo/Decawave DW1000 driver
+
+module = DW1000
+module-str = dw1000
+source "subsys/logging/Kconfig.template.log_config"
